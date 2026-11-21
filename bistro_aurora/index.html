@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aurora Pizzaria — pizzas artesanais, ingredientes selecionados e noites especiais.">
+  <title>Aurora Pizzaria | Uma experiência a cada fatia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Aurora Pizzaria - início">
+      <span class="brand-mark">A</span>
+      <span>AURORA <small>P I Z Z A R I A</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">A experiência</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#contato">Contato</a>
+      <a class="nav-cta" href="#cardapio">Ver cardápio <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> PIZZA ARTESANAL • FEITA COM TEMPO</p>
+        <h1>Uma experiência<br> a cada <em>fatia.</em></h1>
+        <p class="hero-copy">Ingredientes selecionados, massa de longa fermentação e aquele sabor que transforma qualquer noite em uma ocasião especial.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#cardapio">Explorar cardápio <span>↗</span></a>
+          <a class="text-link" href="#sobre">Conheça a Aurora <span>↓</span></a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span> UMA NOITE. UMA BOA PIZZA. BOAS HISTÓRIAS.</div>
+      </div>
+      <div class="hero-stamp"><span>FEITA</span><strong>COM<br>PAIXÃO</strong><span>DESDE O PRIMEIRO DIA</span></div>
+      <div class="hero-bottom"><span>01 — SABOR</span><span>ROLE PARA DESCOBRIR ↓</span></div>
+    </section>
+
+    <section class="intro section" id="sobre">
+      <div class="intro-image">
+        <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1100&q=85" alt="Pizza artesanal recém-saída do forno">
+        <div class="image-caption">MASSA ARTESANAL · INGREDIENTES DE VERDADE</div>
+      </div>
+      <div class="intro-copy">
+        <p class="eyebrow gold">MAIS QUE PIZZA, UM MOMENTO.</p>
+        <h2>O segredo está<br>no <em>tempo.</em></h2>
+        <p>Nossa massa descansa por horas para alcançar leveza, sabor e textura. Cada pizza é preparada na hora, com ingredientes escolhidos para combinar perfeitamente em cada mordida.</p>
+        <div class="features">
+          <div><b>48h</b><span>de fermentação<br>natural</span></div>
+          <div><b>100%</b><span>ingredientes<br>selecionados</span></div>
+          <div><b>1 a 1</b><span>preparada<br>com cuidado</span></div>
+        </div>
+        <a class="text-link gold-link" href="#cardapio">Descubra nossos sabores <span>↘</span></a>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="cardapio">
+      <div class="section-heading">
+        <div><p class="eyebrow gold">ESCOLHAS QUE ENCANTAM</p><h2>Nosso <em>cardápio.</em></h2></div>
+        <p>Clássicos que conquistam e combinações criadas para surpreender. Qual vai ser a sua hoje?</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar pizzas">
+        <button class="filter active" data-filter="todas">Todas</button>
+        <button class="filter" data-filter="classicas">Clássicas</button>
+        <button class="filter" data-filter="especiais">Especiais</button>
+        <button class="filter" data-filter="vegetarianas">Vegetarianas</button>
+      </div>
+      <div class="pizza-grid">
+        <article class="pizza-card" data-category="classicas">
+          <div class="pizza-photo"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=900&q=85" alt="Pizza Margherita"><span>CLÁSSICA</span></div>
+          <div class="pizza-info"><div><h3>Margherita</h3><p>Molho artesanal, mozzarella, tomate fresco e manjericão.</p></div><strong>R$ 49</strong></div>
+        </article>
+        <article class="pizza-card" data-category="classicas">
+          <div class="pizza-photo"><img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=900&q=85" alt="Pizza Pepperoni"><span>FAVORITA</span></div>
+          <div class="pizza-info"><div><h3>Pepperoni</h3><p>Molho da casa, mozzarella especial e pepperoni levemente picante.</p></div><strong>R$ 56</strong></div>
+        </article>
+        <article class="pizza-card" data-category="especiais">
+          <div class="pizza-photo"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=900&q=85" alt="Pizza de quatro queijos"><span>ESPECIAL</span></div>
+          <div class="pizza-info"><div><h3>Quatro Queijos</h3><p>Mozzarella, gorgonzola, parmesão e cream cheese.</p></div><strong>R$ 59</strong></div>
+        </article>
+        <article class="pizza-card" data-category="vegetarianas">
+          <div class="pizza-photo"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85" alt="Pizza vegetariana"><span>VEGETARIANA</span></div>
+          <div class="pizza-info"><div><h3>Jardim da Aurora</h3><p>Abobrinha, tomate confit, cebola roxa, rúcula e mozzarella.</p></div><strong>R$ 54</strong></div>
+        </article>
+        <article class="pizza-card" data-category="especiais">
+          <div class="pizza-photo"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=900&q=85" alt="Pizza artesanal especial"><span>DA CASA</span></div>
+          <div class="pizza-info"><div><h3> Aurora Especial</h3><p>Calabresa artesanal, mozzarella, cebola caramelizada e toque de mel.</p></div><strong>R$ 62</strong></div>
+        </article>
+        <article class="pizza-card" data-category="classicas">
+          <div class="pizza-photo"><img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=900&q=85" alt="Pizza de frango"><span>CLÁSSICA</span></div>
+          <div class="pizza-info"><div><h3>Frango Cremoso</h3><p>Frango desfiado, mozzarella, requeijão cremoso e orégano.</p></div><strong>R$ 57</strong></div>
+        </article>
+      </div>
+      <p class="menu-disclaimer">* Projeto demonstrativo: nomes, preços e produtos são ilustrativos.</p>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-inner"><span class="quote-mark">“</span><p>Algumas noites pedem<br>uma pizza <em>inesquecível.</em></p><span class="quote-sign">A EXPERIÊNCIA AURORA</span></div>
+    </section>
+
+    <section class="contact section" id="contato">
+      <div><p class="eyebrow gold">SUA PRÓXIMA NOITE COMEÇA AQUI</p><h2>Vamos reservar<br>um lugar para <em>você?</em></h2><p>Chame a gente e descubra o sabor de uma noite especial.</p></div>
+      <div class="contact-box"><span class="contact-icon">✦</span><h3>Peça pelo WhatsApp</h3><p>Faça seu pedido ou tire suas dúvidas com a nossa equipe.</p><a class="button button-gold" href="https://wa.me/5546999999999?text=Olá!%20Vim%20pelo%20site%20da%20Aurora." target="_blank" rel="noopener">Falar com a Aurora ↗</a><small>WhatsApp demonstrativo — substitua pelo número do cliente.</small></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#inicio"><span class="brand-mark">A</span><span>AURORA <small>P I Z Z A R I A</small></span></a>
+    <p>Uma experiência a cada fatia.</p>
+    <span>© <span id="year"></span> Aurora Pizzaria. Projeto demonstrativo desenvolvido pela ALVORA Tecnologia.</span>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
